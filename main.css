@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Sora:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*NAVBAR SETTINGS*/
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 20px 60px;
+    background-color: #ffffffe4;
+}
+
+.logo {
+    justify-self: flex-start;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #314163;
+}
+
+li {
+    margin-right: 60px;
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+
+
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #314163;
+}
+
+/*GRID SETTING AND HERO IMG*/
+.hero-img {
+    margin-top: 7em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.h1 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #314163;
+}
+
+.h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #314163;
+    margin-top: 15px;
+    word-spacing: 4px;
+    line-height: 28px;
+
+}
+
+.links{
+    color: rgb(213, 75, 37);
+    font-weight: bolder;
+}
+
+.blob-img {
+    width: 100%;
+}
+
+
+.contact-btn {
+    margin-top: 40px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    width: 40%;
+    height: 4.5rem;
+    background-color: #314163;
+    color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: ease 1s;
+    box-shadow: 0 8px 1px 0 #4d6290af;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    font-size: 25px;
+}
+
+
+
+/*
+Seccion Noticias 
+*/
+
+.Noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 60px;
+    margin-top: 6em;
+
+
+}
+
+.col1 {
+    width: 90%;
+
+}
+
+.col2 {
+    width: 90%;
+}
+
+.col3 {
+    width: 90%;
+}
+
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 20px auto;
+    width: 80%;
+}
+
+/*Seccion de contactos*/
+
+.Contact-form {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #314163;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 60px;
+
+}
+
+.img-contact {
+    height: auto;
+    width: 100%;
+}
+
+label {
+    font-size: 25px;
+    margin: 0px 20px 40px 0px;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    margin: 10px 20px 0px 0px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.Message {
+    height: 100px;
+    overflow-y: scroll;
+    pad: 4px 4px;
+}
+
+button {
+    margin-top: 30px;
+    width: 40%;
+    height: 60px;
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: #3c5488;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* Medium devices (landscape tablets, 961px and down) */
+@media only screen and (max-width: 961px) {
+    .logo {
+        justify-self: flex-start;
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #314163;
+    }
+
+    li {
+        margin-right: 30px;
+        list-style: none;
+        text-decoration: none;
+        display: inline;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    /*GRID SETTING AND HERO IMG*/
+    .hero-img {
+        margin-top: 7em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 20px 60px;
+    }
+
+    .h1 {
+        font-size: 40px;
+    }
+
+    .h3 {
+        font-size: 15px;
+        margin-top: 15px;
+        word-spacing: 4px;
+        line-height: 20px;
+    }
+
+    .blob-img {
+        width: 100%;
+    }
+
+    .contact-btn {
+        font-size: 20px;
+        width: 60%;
+        height: 4.5rem;
+    }
+
+    /*
+    Seccion Noticias 
+    */
+
+    .Noticias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 60px;
+        margin-top: 6em;
+    }
+
+    .col1 {
+        width: 100%;
+
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    /*Seccion de contactos*/
+
+    .Contact-form {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 60px;
+
+    }
+
+    label {
+        font-size: 18px;
+        margin: 0px 20px 40px 0px;
+    }
+
+    input {
+        width: 80%;
+        height: 40px;
+        margin: 10px 20px 0px 0px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .Message {
+        height: 100px;
+        overflow-y: scroll;
+        pad: 4px 4px;
+    }
+
+    button {
+        width: 80%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 691px and down) */
+@media only screen and (max-width: 691px) {
+    .logo {
+        justify-self: flex-start;
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #314163;
+    }
+
+    li {
+        margin-right: 20px;
+        list-style: none;
+        text-decoration: none;
+        display: inline;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    /*GRID SETTING AND HERO IMG*/
+    .hero-img {
+        margin-top: 7em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 20px 60px;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .h3 {
+        font-size: 12px;
+        margin-top: 15px;
+        word-spacing: 4px;
+        line-height: 20px;
+    }
+
+    .blob-img {
+        width: 100%;
+    }
+
+    .contact-btn {
+        font-size: 16px;
+        width: 60%;
+        height: 3rem;
+    }
+
+    /*
+    Seccion Noticias 
+    */
+
+    .Noticias {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: auto;
+        margin-top: 6em;
+    }
+
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    /*Seccion de contactos*/
+    .form {
+        width: 100%;
+    }
+
+    .Contact-form {
+        font-size: 20px;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 60px;
+        flex-direction: column-reverse;
+
+    }
+
+    label {
+        font-size: 18px;
+        margin: 0px 20px 40px 0px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        margin: 10px 20px 0px 0px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px 60px;
+    }
+
+    .Message {
+        height: 100px;
+        overflow-y: scroll;
+        pad: 4px 4px;
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+}
+
+
+/* Small devices (Mobile, 426px and down) */
+@media only screen and (max-width: 426px) {
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 20px 60px;
+        background-color: #ffffffe4;
+        scroll-margin-top: 3.8em;
+
+    }
+
+    .logo {
+        justify-self: flex-start;
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #314163;
+    }
+
+    li {
+        display: none;
+    }
+
+    /*GRID SETTING AND HERO IMG*/
+    .hero-img {
+        margin-top: 7em;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+        padding: 20px 17px;
+
+    }
+
+    .h1 {
+        font-size: 35px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .h3 {
+        font-size: 17px;
+        margin-top: 15px;
+        word-spacing: 2px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .blob-img {
+        width: 100%;
+
+    }
+
+    .contact-me {
+        text-align: center;
+    }
+
+    .contact-btn {
+        font-size: 16px;
+        width: 80%;
+        height: 3rem;
+
+    }
+
+    /*
+    Seccion Noticias 
+    */
+
+    .Noticias {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: auto;
+        margin-top: 3em;
+    }
+
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    /*Seccion de contactos*/
+
+    .form {
+        width: 80%;
+    }
+
+    .Contact-form {
+        font-size: 20px;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        flex-direction: column-reverse;
+
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        margin: 10px 20px 0px 0px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .Message {
+        height: 100px;
+        overflow-y: scroll;
+
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+}
+
+
+/* Small devices (Mobile, 375px and down) */
+@media only screen and (max-width: 375px) {
+
+    .logo {
+        justify-self: flex-start;
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #314163;
+    }
+
+    li {
+        display: none;
+    }
+
+    /*GRID SETTING AND HERO IMG*/
+    .hero-img {
+        margin-top: 7em 1em 1em 1em;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+        padding: 20px 13px;
+
+    }
+
+    .h1 {
+        font-size: 22px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .h3 {
+        font-size: 15px;
+        margin-top: 15px;
+        word-spacing: 2px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .blob-img {
+        width: 100%;
+
+    }
+
+    .contact-me {
+        text-align: center;
+    }
+
+    .contact-btn {
+        font-size: 16px;
+        width: 70%;
+        height: 3.4rem;
+
+    }
+
+    /*
+    Seccion Noticias 
+    */
+
+    .Noticias {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 20px 5px 20px;
+        margin-top: 3em;
+
+
+    }
+
+    .col1 {
+        width: 100%;
+
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    /*Seccion de contactos*/
+
+    .form {
+        width: 100%;
+    }
+
+    .Contact-form {
+        font-size: 20px;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        flex-direction: column-reverse;
+
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        margin: 10px 20px 0px 0px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .Message {
+        height: 100px;
+        overflow-y: scroll;
+
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+}
+
+
+/* Small devices (Mobile, 321px and down) */
+@media only screen and (max-width: 321px) {
+
+    .logo {
+        justify-self: flex-start;
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #314163;
+    }
+
+    li {
+        display: none;
+    }
+
+    /*GRID SETTING AND HERO IMG*/
+    .hero-img {
+        margin-top: 7em 1em 1em 1em;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+        padding: 20px 13px;
+
+    }
+
+    .h1 {
+        font-size: 22px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .h3 {
+        font-size: 15px;
+        margin-top: 15px;
+        word-spacing: 2px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .blob-img {
+        width: 100%;
+
+    }
+
+    .contact-me {
+        text-align: center;
+    }
+
+    .contact-btn {
+        font-size: 16px;
+        width: 70%;
+        height: 3.4rem;
+
+    }
+
+    /*
+    Seccion Noticias 
+    */
+
+    .Noticias {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 20px 5px 20px;
+        margin-top: 3em;
+
+
+    }
+
+    .col1 {
+        width: 100%;
+
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    /*Seccion de contactos*/
+
+    .form {
+        width: 100%;
+    }
+
+    .Contact-form {
+        font-size: 20px;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        flex-direction: column-reverse;
+
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        margin: 10px 20px 0px 0px;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .Message {
+        height: 100px;
+        overflow-y: scroll;
+
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+}
